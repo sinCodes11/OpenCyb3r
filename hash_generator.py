@@ -4,9 +4,23 @@ def generate_hash(input_data):
     sha1_hash = hashlib.sha1(input_data.encode()).hexdigest()
     sha256_hash = hashlib.sha256(input_data.encode()).hexdigest()
 
-    print("MD5 Hash:", md5_hash)
-    print("SHA1 Hash:", sha1_hash)
-    print("SHA256 Hash:", sha256_hash)
+    return {
+        "MD5": md5_hash,
+        "SHA1": sha1_hash,
+        "SHA256": sha256_hash
+    }
 
-input_data = input("Enter a string: ")
-generate_hash(input_data)
+def main():
+    print("Hash Generator")
+    print("==============")
+    
+    input_data = input("Enter a string: ")
+    hashes = generate_hash(input_data)
+
+    print("Hashes:")
+    for algo, hash_value in hashes.items():
+        print(f"{algo}: {hash_value}")
+
+if __name__ == "__main__":
+    main()
+    
