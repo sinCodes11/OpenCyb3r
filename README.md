@@ -1,6 +1,6 @@
 # OpenCyb3r
 
-Welcome to **OpenCyb3r**, an open-source cybersecurity tool suite designed to help students and beginners contribute to open-source projects while learning practical cybersecurity concepts.
+Welcome to **OpenCyb3r**, OpenCyb3r is an open-source cybersecurity tool suite designed to help students and beginners contribute to open-source projects while gaining practical experience in cybersecurity.
 
 ---
 
@@ -78,7 +78,7 @@ Tweak the parameters to test and score passwords the way you choose!
 ---
 
 ## Hash Generator
-Generate MD5, SHA1, and SHA256 hashes for any iniput string.
+Generate MD5, SHA1, and SHA256 hashes for any input string.
 
 Usage Run python hash_generator.py and enter a string to generate its hashes.
 

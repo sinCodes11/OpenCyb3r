@@ -1,10 +1,14 @@
 import sys
 import os
 
+def clear_screen():
+    os.system('cls' if os.name == 'nt' else 'clear')
+
 # Ensure the "Password Analyzer Builder" folder is accessible
 sys.path.insert(0, os.path.join(os.path.dirname(__file__), 'Password Analyzer Builder'))
 
 def show_menu():
+    clear_screen()
     print("\nWelcome to OpenCyb3r")
     print("=====================")
     print("1. Hash Generator")
